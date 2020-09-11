@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content=""/>
+    <meta name="application-name" content="Titulo Pagina"/>
+    <title>Inmobiliaria Contreras</title>
+    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="images/logo/favicon.png" type="image/x-icon"/>
+    <!-- Fancybox-->
+    <link href="vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
+    <!--Flexslider-->
+    <link rel="stylesheet" href="vendor/flexslider/flexslider.css"/>
+    <link href="vendor/normalize.min.css" rel="stylesheet"/>
+    <link href="vendor/flexboxgrid.min.css" rel="stylesheet"/>
+    <link href="css/main.min.css" rel="stylesheet"/>
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="btn-menu">
+      <div class="hamburglar is-close" id="hamburger">
+        <div class="burger-icon">
+          <div class="burger-container"><span class="burger-bun-top"></span><span class="burger-filling"></span><span class="burger-bun-bot"></span></div>
+        </div>
+        <!-- svg ring containter-->
+        <div class="burger-ring">
+          <svg class="svg-ring">
+            <path class="path" fill="none" stroke="#3a3b38" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"></path>
+          </svg>
+        </div>
+        <!-- the masked path that animates the fill to the ring-->
+        <svg width="0" height="0">
+          <mask id="mask">
+            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"></path>
+          </mask>
+        </svg>
+        <div class="path-burger">
+          <div class="animate-path">
+            <div class="path-rotation"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-header row middle-xs">
+      <div class="limiter__container not-padding">
+        <header>
+          <div class="col-xs-12 row between-xs middle-xs bar-menu">
+            <div class="col-xs-12 col-sm-3 center-xs start-sm"><a href="index.html"><img src="images/logo/logo.svg" alt="logo index"/></a></div>
+            <div class="col-xs-12 col-sm-7 row middle-xs end-xs">
+              <nav>
+                <ul class="row between-xs">
+                  <li class="row middle-xs center-xs red"><a href="comprar.html">COMPRAR</a></li>
+                  <li class="row middle-xs center-xs purple"><a href="arrendar.html">ARRENDAR</a></li>
+                  <li class="row middle-xs center-xs orange"><a href="publicar.html">PUBLICA TU <br> INMUEBLE</a></li>
+                  <li class="row middle-xs center-xs orange"><a href="quienes_somos.html">QUIÉNES SOMOS</a></li>
+                  <li class="row middle-xs center-xs orange"><a href="contacto.html">CONTACTO</a></li>
+                  <li class="row middle-xs center-xs col-xs-12 social_icon_header">
+                    <div class="row col-xs-6 center-xs between-xs"><a class="col-xs-4" href="#" title="Facebook"><img class="social-icon to-svg" src="./images/icons/icon-facebook.svg" alt="Facebook"/></a><a class="col-xs-4" href="#" title="Twitter"><img class="social-icon to-svg" src="./images/icons/icon-twitter.svg" alt="Twitter"/></a><a class="col-xs-4" href="#" title="Instagram"><img class="social-icon to-svg" src="./images/icons/icon-instagram.svg" alt="Instagram"/></a></div>
+                  </li>
+                  <li class="row middle-xs center-xs col-xs-12 section-publish-menu">
+                    <div class="col-xs-7">
+                      <h4>PUBLIQUE SU INMUEBLE<br/><span>AGENDE UNA CITA</span></h4>
+                    </div>
+                    <div class="col-xs-4"><a class="btn orange" href="contacto.html" title="title">aquí </a></div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <section class="content">
+      <!--Section header-->
+      <!-- Image for header page with buttoms section-->
+      <div class="content_header_index">
+        <div class="img_header" style="background: url(images/backgrounds/bk-header.png)center no-repeat; background-size: cover; height: 100vh;">
+          <div class="item center-xs">
+            <div class="content_bar purple_transparent center-xs middle-xs">
+              <h2>ENCUENTRE <span>SU ESPACIO SOÑADO</span></h2>
+            </div>
+            <div class="buttons limiter__container row center-xs middle-xs"><a class="btn transparent_red col-xs-6 col-sm-2" href="comprar.html">COMPRAR</a><a class="btn transparent_purple col-xs-6 col-sm-2" href="arrendar.html">ARRENDAR</a><a class="btn transparent_orange col-xs-6 col-sm-2" href="publicar.html">PUBLIQUE SU INMUEBLE</a></div>
+          </div>
+        </div>
+      </div>
+      <!--Services-->
+      <div class="row col-xs-12 content_index">
+        <div class="bk-gray col-xs-12">
+          <div class="limiter__container">
+            <div class="content-card center-xs col-xs-12 row">
+              <div class="card card-white col-xs-10 col-sm-8">
+                <h3 class="txt_orange txt_card">CONOCEMOS EL SECTOR INMOBILIARIO</h3>
+                <p>Ofrecemos servicios especializados para su seguridad</p>
+              </div>
+            </div>
+            <section class="services row center-xs padding-botton padding-top">
+              <div class="col-xs-12 col-sm-4 center-xs item-service"><img class="to-svg" src="images/icons/house_hand.svg" alt=""/>
+                <h4>Comercialización <br><span>Efectiva de muebles</span></h4><a class="view-more" href="#" title="title">Ver más</a>
+              </div>
+              <div class="col-xs-12 col-sm-4 center-xs item-service"><img class="to-svg" src="images/icons/docs.svg" alt=""/>
+                <h4>Protección jurídica <br><span>y asesoría legal en bienes raíces</span></h4><a class="view-more" href="#" title="title">Ver más</a>
+              </div>
+              <div class="col-xs-12 col-sm-4 center-xs item-service"><img class="to-svg" src="images/icons/light.svg" alt=""/>
+                <h4>Estructuración <br><span>de proyectos inmobiliarios</span></h4><a class="view-more" href="#" title="title">Ver más</a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!--End services-->
+        <!--Suscription-->
+        <div class="content_bar orange col-xs-12">
+          <div class="limiter__container not-padding">
+            <div class="row middle-xs center-xs between-xs"><img class="col-sm-1" src="images/icons/icon-abstract.png" alt=""/>
+              <h3 class="col-xs-12 col-sm-4">Boletín semanal <span>inmobiliario</span></h3>
+              <form class="suscribe col-xs-12 col-sm-6 row middle-xs center-xs end-sm" action="">
+                <input class="col-md-6 col-lg-8" id="suscribe_input" type="email" name="email" placeholder="Correo Electronico"/>
+                <button class="col-md-4 col-lg-2 btn purple" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--End suscription-->
+        <!--Immovables-->
+        <div class="limiter__container">
+          <div class="row col-xs-12 center-xs padding-top">
+            <div class="title_section row center-xs"><span class="icon_content house-icon"></span>
+              <h3 class="middle-xs">INMUEBLES<span>DESTACADOS</span></h3>
+            </div>
+          </div>
+          <!--Items immnovables-->
+          <section class="immovables row between-xs col-xs-12 padding-top padding-botton">
+            <!--Item immovable-->
+            <div class="item-immovable col-xs-12 col-sm-6 col-md-4 row center-xs">
+              <div class="img-imm" style="background: url(./images/immovables/imm01.png) center no-repeat;">
+                <div class="hover-item"></div>
+                <div class="img-details">
+                  <p class="red">VENTA</p><span>5</span>
+                </div>
+              </div>
+              <div class="details">
+                <p>$ 1'300.900</p>
+                <h4>La esperanza -<span class="city-imm">Duitama</span></h4>
+                <div class="row center-xs middle-xs charac">
+                  <div class="item-charac">
+                    <p>93 mts</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>3 hab</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>2 par</p>
+                  </div>
+                </div><a class="view-more" href="inmueble.html">Ver más</a>
+              </div>
+            </div>
+            <!--End item immovable-->
+            <!--Item immovable-->
+            <div class="item-immovable col-xs-12 col-sm-6 col-md-4 row center-xs">
+              <div class="img-imm" style="background: url(./images/immovables/imm02.png) center no-repeat;">
+                <div class="hover-item"></div>
+                <div class="img-details">
+                  <p class="red">VENTA</p><span>5</span>
+                </div>
+              </div>
+              <div class="details">
+                <p>$ 1'300.900</p>
+                <h4>La esperanza -<span class="city-imm">Duitama</span></h4>
+                <div class="row center-xs middle-xs charac">
+                  <div class="item-charac">
+                    <p>93 mts</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>3 hab</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>2 par</p>
+                  </div>
+                </div><a class="view-more" href="inmueble.html">Ver más</a>
+              </div>
+            </div>
+            <!--End item immovable-->
+            <!--Item immovable-->
+            <div class="item-immovable col-xs-12 col-sm-6 col-md-4 row center-xs">
+              <div class="img-imm" style="background: url(./images/immovables/imm03.png) center no-repeat;">
+                <div class="hover-item"></div>
+                <div class="img-details">
+                  <p class="red">VENTA</p><span>5</span>
+                </div>
+              </div>
+              <div class="details">
+                <p>$ 1'300.900</p>
+                <h4>La esperanza -<span class="city-imm">Duitama</span></h4>
+                <div class="row center-xs middle-xs charac">
+                  <div class="item-charac">
+                    <p>93 mts</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>3 hab</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>2 par</p>
+                  </div>
+                </div><a class="view-more" href="inmueble.html">Ver más</a>
+              </div>
+            </div>
+            <!--End item immovable-->
+            <!--Item immovable-->
+            <div class="item-immovable col-xs-12 col-sm-6 col-md-4 row center-xs">
+              <div class="img-imm" style="background: url(./images/immovables/imm01.png) center no-repeat;">
+                <div class="hover-item"></div>
+                <div class="img-details">
+                  <p class="purple">ARRIENDO</p><span>5</span>
+                </div>
+              </div>
+              <div class="details">
+                <p>$ 1'300.900</p>
+                <h4>La esperanza -<span class="city-imm">Duitama</span></h4>
+                <div class="row center-xs middle-xs charac">
+                  <div class="item-charac">
+                    <p>93 mts</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>3 hab</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>2 par</p>
+                  </div>
+                </div><a class="view-more" href="inmueble.html">Ver más</a>
+              </div>
+            </div>
+            <!--End item immovable-->
+            <!--Item immovable-->
+            <div class="item-immovable col-xs-12 col-sm-6 col-md-4 row center-xs">
+              <div class="img-imm" style="background: url(./images/immovables/imm02.png) center no-repeat;"> 
+                <div class="hover-item"></div>
+                <div class="img-details">
+                  <p class="red">VENTA</p><span>5</span>
+                </div>
+              </div>
+              <div class="details">
+                <p>$ 1'300.900</p>
+                <h4>La esperanza -<span class="city-imm">Duitama</span></h4>
+                <div class="row center-xs middle-xs charac">
+                  <div class="item-charac">
+                    <p>93 mts</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>3 hab</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>2 par</p>
+                  </div>
+                </div><a class="view-more" href="inmueble.html">Ver más</a>
+              </div>
+            </div>
+            <!--End item immovable-->
+            <!--Item immovable-->
+            <div class="item-immovable col-xs-12 col-sm-6 col-md-4 row center-xs">
+              <div class="img-imm" style="background: url(./images/immovables/imm03.png) center no-repeat;">
+                <div class="hover-item"></div>
+                <div class="img-details">
+                  <p class="red">VENTA</p><span>5</span>
+                </div>
+              </div>
+              <div class="details">
+                <p>$ 1'300.900</p>
+                <h4>La esperanza -<span class="city-imm">Duitama</span></h4>
+                <div class="row center-xs middle-xs charac">
+                  <div class="item-charac">
+                    <p>93 mts</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>3 hab</p>
+                  </div>
+                  <div class="item-charac">
+                    <p>2 par</p>
+                  </div>
+                </div><a class="view-more" href="inmueble.html">Ver más</a>
+              </div>
+            </div>
+            <!--End item immovable-->
+            <div class="col-xs-12 center-xs"><a class="btn purple" href="">cargar más</a></div>
+          </section>
+          <!--End immovables-->
+          <!--End items immovables-->
+        </div>
+        <!--End immovables-->
+        <!--News-->
+        <div class="bk-gray col-xs-12">
+          <div class="limiter__container">
+            <div class="row col-xs-12 center-xs padding-top">
+              <div class="title_section row center-xs"><span class="icon_content news-icon"></span>
+                <h3 class="middle-xs">NOTICIAS<span>DEL SECTOR</span></h3>
+              </div>
+            </div>
+            <section class="news row center-xs between-xs col-xs-12 padding-top padding-botton">
+              <div class="item-news col-xs-12 col-sm-6 col-md-4 row center-xs">
+                <div class="img-news" style="background: url(./images/news/news01.png) center no-repeat;">
+                  <div class="hover-item"></div>
+                </div>
+                <div class="news-details"><span>13 sep 2017</span>
+                  <h4>¿Como escoger tu zona ideal para vivir?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod ut vero, debitis deserunt odio...</p><a class="view-more" href="noticia.html">Ver más</a>
+                </div>
+              </div>
+              <div class="item-news col-xs-12 col-sm-6 col-md-4 row center-xs">
+                <div class="img-news" style="background: url(./images/news/news02.png) center no-repeat;">
+                  <div class="hover-item"></div>
+                </div>
+                <div class="news-details"><span>13 sep 2017</span>
+                  <h4>¿Como escoger tu zona ideal para vivir?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod ut vero, debitis deserunt odio...</p><a class="view-more" href="noticia.html">Ver más</a>
+                </div>
+              </div>
+              <div class="item-news col-xs-12 col-sm-6 col-md-4 row center-xs">
+                <div class="img-news" style="background: url(./images/news/news03.png) center no-repeat;">
+                  <div class="hover-item"></div>
+                </div>
+                <div class="news-details"><span>13 sep 2017</span>
+                  <h4>¿Como escoger tu zona ideal para vivir?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod ut vero, debitis deserunt odio...</p><a class="view-more" href="noticia.html">Ver más</a>
+                </div>
+              </div>
+              <div class="col-xs-12 center-xs"><a class="btn purple" href="">cargar más</a></div>
+            </section>
+          </div>
+        </div>
+        <!--End news-->
+        <!--Footer Info-contact-->
+        <div class="contact-footer row col-xs-12" style="background: url(./images/backgrounds/bk-footer.png) center no-repeat;">
+          <div class="limiter__container">
+            <div class="header-contact-footer">
+              <div class="row middle-xs">
+                <div class="col-xs-12 col-sm-7 middle-xs start-xs">
+                  <ul class="row center-xs start-sm">
+                    <li><a hreft="">COMPRAR</a></li>
+                    <li><a hreft="">VENDER</a></li>
+                    <li><a hreft="">PUBLICAR INMUEBLE</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 middle-xs center-xs end-sm"><img src="./images/logo/logo-white.svg" alt="Logo"/></div>
+              </div>
+            </div>
+            <div class="body-contact-footer">
+              <div class="row middle-xs">
+                <div class="row middle-xs center-xs start-sm col-xs-12 col-sm-2 social_icons"><a class="col-xs-4" href="#" title="Facebook"><img class="social-icon to-svg" src="./images/icons/icon-facebook.svg" alt="Facebook"/></a><a class="col-xs-4" href="#" title="Twitter"><img class="social-icon to-svg" src="./images/icons/icon-twitter.svg" alt="Twitter"/></a><a class="col-xs-4" href="#" title="Instagram"><img class="social-icon to-svg" src="./images/icons/icon-instagram.svg" alt="Instagram"/></a></div>
+                <div class="row middle-xs col-xs-12 col-sm-10 center-xs end-sm publish-imm-footer">
+                  <div class="col-xs-8 col-sm-10">
+                    <p>PUBLIQUE SU INMUEBLE<span>AGENDE UNA CITA</span></p>
+                  </div>
+                  <div class="coL-xs-4 col-sm-2"><a class="btn orange" href="">aquí</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-footer row between-xs">
+              <div class="col-xs-12 col-sm-3 center-xs item-info">
+                <p>3182801504</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 center-xs item-info">
+                <p>CALLE 16#14-41 / OF.905-ED. PALMA REAL</p>
+              </div>
+              <div class="col-xs-12 col-sm-3 center-xs item-info">
+                <p>DUITAMA - BOYACÁ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End footer Info-contact-->
+        <!--Map-->
+        <div class="medio__mapa" id="map" data-map-lat="4.606406" data-map-lon="-74.078435" data-map-img="./images/icons/icon-map.png"></div>
+        <!--End Map-->
+        <!--Footer-->
+        <footer class="row col-xs-12">
+          <div class="limiter__container center-xs middle-xs">
+            <p>© 2010 - 2017 Inmobiliaria Contreras SAS. Todos los derechos reservados. Términos y Condiciones | Política de Privacidad</p>
+          </div>
+        </footer>
+        <!--End Footer-->
+      </div>
+    </section><span id="btn-icon-up"><img src="./images/icons/icon-arrow-up.png" alt="Icon Up"/></span>
+    <div class="modal__loading"></div>
+    <div class="message__popup">
+      <div class="row middle-xs">
+        <div class="logo"><img src="images/logo/logo.png" alt="Inmobiliaria"/></div>
+        <div class="message__content">
+          <h3 class="message__title">Notificación Sistema</h3>
+          <p class="message__text">Su mensaje se ha enviado correctamente</p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional FlexSlider Additions-->
+    <script src="vendor/flexslider/jquery.easing.js"></script>
+    <script src="vendor/flexslider/jquery.mousewheel.js"></script>
+    <!--Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBZp-ujdsD2YiiVuDo1-fbf-VHJMf-Zuw" async="async" defer="defer"></script>
+    <script src="vendor/gmap3.min.js"></script>
+    <script src="js/map.js"> </script>
+    <!-- Fancybox-->
+    <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <!-- Syntax Highlighter flexslide-->
+    <script type="text/javascript" src="vendor/flexslider/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="vendor/flexslider/shCore.js"></script>
+    <script type="text/javascript" src="vendor/flexslider/shBrushXml.js"></script>
+    <script type="text/javascript" src="vendor/flexslider/shBrushJScript.js"></script>
+    <!--Main-->
+    <script src="js/main.js"> </script>
+  </body>
+</html>

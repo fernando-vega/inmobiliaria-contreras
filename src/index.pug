@@ -1,0 +1,99 @@
+extends _base
+
+block content
+  //Section header
+  // Image for header page with buttoms section
+  .content_header_index
+    .img_header(style="background: url(images/backgrounds/bk-header.png)center no-repeat; background-size: cover; height: 100vh")
+      .item.center-xs
+        .content_bar.purple_transparent.center-xs.middle-xs
+          h2 ENCUENTRE 
+            span SU ESPACIO SOÑADO
+        .buttons.limiter__container.row.center-xs.middle-xs
+          a(href="comprar.html").btn.transparent_red.col-xs-6.col-sm-2 COMPRAR
+          a(href="arrendar.html").btn.transparent_purple.col-xs-6.col-sm-2 ARRENDAR
+          a(href="publicar.html").btn.transparent_orange.col-xs-6.col-sm-2 PUBLIQUE SU INMUEBLE
+  //Services
+  .row.col-xs-12.content_index
+    .bk-gray.col-xs-12
+      .limiter__container
+        .content-card.center-xs.col-xs-12.row
+          .card.card-white.col-xs-10.col-sm-8
+            h3.txt_orange.txt_card CONOCEMOS EL SECTOR INMOBILIARIO
+            p Ofrecemos servicios especializados para su seguridad
+        section.services.row.center-xs.padding-botton.padding-top
+          .col-xs-12.col-sm-4.center-xs.item-service
+            img.to-svg(src="images/icons/house_hand.svg", alt="")
+            h4 Comercialización <br>
+              span Efectiva de muebles
+            a.view-more(href="#", title="title") Ver más
+          .col-xs-12.col-sm-4.center-xs.item-service
+            img.to-svg(src="images/icons/docs.svg", alt="")
+            h4 Protección jurídica <br>
+              span y asesoría legal en bienes raíces
+            a.view-more(href="#", title="title") Ver más
+          .col-xs-12.col-sm-4.center-xs.item-service
+            img.to-svg(src="images/icons/light.svg", alt="")
+            h4 Estructuración <br>
+              span de proyectos inmobiliarios
+            a.view-more(href="#", title="title") Ver más
+    //End services
+    //Suscription
+    .content_bar.orange.col-xs-12
+      .limiter__container.not-padding
+        .row.middle-xs.center-xs.between-xs
+          img.col-sm-1(src="images/icons/icon-abstract.png", alt="")
+          h3.col-xs-12.col-sm-4 Boletín semanal 
+            span inmobiliario
+          form.suscribe.col-xs-12.col-sm-6.row.middle-xs.center-xs.end-sm(action="")
+            input#suscribe_input.col-md-6.col-lg-8(type="email", name="email", placeholder="Correo Electronico")
+            button.col-md-4.col-lg-2.btn.purple(type="submit") Enviar
+    //End suscription
+    //Immovables
+    .limiter__container
+      .row.col-xs-12.center-xs.padding-top
+        .title_section.row.center-xs
+          span.icon_content.house-icon
+          h3.middle-xs INMUEBLES
+            span DESTACADOS
+      //Items immnovables
+      include __immovables  
+      //End items immovables
+    //End immovables
+    //News
+    .bk-gray.col-xs-12
+      .limiter__container
+        .row.col-xs-12.center-xs.padding-top
+          .title_section.row.center-xs
+            span.icon_content.news-icon
+            h3.middle-xs NOTICIAS
+              span DEL SECTOR
+        section.news.row.center-xs.between-xs.col-xs-12.padding-top.padding-botton
+          .item-news.col-xs-12.col-sm-6.col-md-4.row.center-xs
+            .img-news(style="background: url(./images/news/news01.png) center no-repeat;")
+              .hover-item
+            .news-details
+              span 13 sep 2017
+              h4 ¿Como escoger tu zona ideal para vivir?
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod ut vero, debitis deserunt odio...
+              a.view-more(href="noticia.html",) Ver más
+          .item-news.col-xs-12.col-sm-6.col-md-4.row.center-xs
+            .img-news(style="background: url(./images/news/news02.png) center no-repeat;")
+              .hover-item
+            .news-details
+              span 13 sep 2017
+              h4 ¿Como escoger tu zona ideal para vivir?
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod ut vero, debitis deserunt odio...
+              a.view-more(href="noticia.html",) Ver más
+          .item-news.col-xs-12.col-sm-6.col-md-4.row.center-xs
+            .img-news(style="background: url(./images/news/news03.png) center no-repeat;")
+              .hover-item
+            .news-details
+              span 13 sep 2017
+              h4 ¿Como escoger tu zona ideal para vivir?
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod ut vero, debitis deserunt odio...
+              a.view-more(href="noticia.html",) Ver más
+          .col-xs-12.center-xs
+            a.btn.purple(href="") cargar más
+    //End news
+    include __footer

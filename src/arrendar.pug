@@ -1,0 +1,72 @@
+extends _base
+
+block content
+
+  //Header not index
+  .padding-botton
+    .img_header(style="background: url(images/backgrounds/bk-header-2.png)center no-repeat; background-size: cover; height: 120px")
+  //End header
+  //Form with background -- Search
+  .col-xs-12.bkg-form.row.middle-xs(style="background: url(images/backgrounds/bk-header-4.png) center no-repeat;")
+    .limiter__container
+      .col-xs-12.row.start-xs
+      h3.title-white COMPRAR 
+        span Elige las opciones que se ajusten a tus sueños
+      form.col-xs-12.row.between-xs.middle-xs
+        select.col-sm-3.col-xs-5(name="type_imm")
+          option(value="") Tipo de inmueble
+          option(value="Apartamento") Apartamento
+          option(value="Casa") Casa
+          option(value="Finca") Finca
+          option(value="Local") Local
+        select.col-sm-3.col-xs-6(name="city")
+          option(value="") Ciudad
+          option(value="Bogota") Bogota
+          option(value="Medellin") Medellin
+          option(value="Tunja") Tunja
+        select.col-sm-3.col-xs-6(name="city")
+          option(value="") Rando de precio
+          option(value="Bogota") 10.000.000 - 50.000.000
+          option(value="Medellin") 50.000.000 - 100.000.000
+          option(value="Tunja") 100.000.000 - 500.000.000
+        select.col-sm-1.col-xs-6(name="city")
+          option(value="") area
+          option(value="50") 50 - 100
+          option(value="100") 100 -200
+          option(value="200") > 200
+        .col-sm-1.col-xs-12.end-sm.center-xs
+          button.btn.not-margin.orange.col-xs-12(type="submit") Buscar
+  //End form search
+  br
+  //Form filter
+  .limiter__container
+    form.col-xs-12.row.between-xs.middle-xs
+      select.col-sm-2.col-xs-5(name="type_imm")
+        option(value="") Sector
+        option(value="Apartamento") Urbano
+        option(value="Casa") Condominio
+        option(value="Finca") Rural
+      select.col-sm-3.col-xs-6(name="city")
+        option(value="") Rando de precio
+        option(value="Bogota") 10.000.000 - 50.000.000
+        option(value="Medellin") 50.000.000 - 100.000.000
+        option(value="Tunja") 100.000.000 - 500.000.000
+      select.col-sm-3.col-xs-5(name="habitaciones")
+        option(value="") N° Habitaciones
+        option(value="1") 1
+        option(value="2") 2
+        option(value="3") 3
+        option(value="4") 4
+      select.col-sm-2.col-xs-6(name="habitaciones") 
+        option(value="") Parqueaderos
+        option(value="1") 1
+        option(value="2") 2
+        option(value="3") 3
+        option(value="4") 4
+      .col-sm-1.col-xs-12.end-sm.center-xs
+        button.btn.not-margin.orange.col-xs-12(type="submit") Filtrar
+    //End form filter
+    //Items immnovables
+    include __immovables  
+    //End items immovables
+  include __footer

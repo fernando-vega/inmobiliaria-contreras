@@ -1,0 +1,30 @@
+.bk-gray{
+  background: #F0F0F0;
+}
+.services{
+  .item-service{
+    padding: @padding*2;
+    transition: all .3s ease-in-out;
+    h4{
+      color: @color-gray-dark;
+      font-size: 1.3em;
+      font-weight: 400;
+      transition: all .3s ease-in-out;
+      span{
+        font-size: 1em;
+        font-weight: 300;
+      }
+    }
+    &:hover{
+      background-color: fade(@color-white, 70%);
+      box-shadow: 1px 3px 8px rgba(0,0,0,.5);
+      border-radius: 2px;
+      h4{
+        color: @color-orange;
+        span{
+          color: @color-gray-dark;
+        }
+      }
+    }
+  }
+}

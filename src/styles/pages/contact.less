@@ -1,0 +1,22 @@
+.contact-info{
+  margin-top: 50px;
+  .item-info{
+    &:nth-child(2n){
+      border-left: 2px solid @color-orange;
+      border-right: 2px solid @color-orange;
+    } 
+    .responsive(@screen-sm,{
+      border-left: 2px solid @color-orange;
+      border-right: 2px solid @color-orange;
+    });
+    p{
+      color: @color-gray-dark;
+      font-size: 1.6em;
+      line-height: 0;
+      font-weight: 300;
+      .responsive(@screen-sm,{
+        font-size: 18px;
+      });
+    }
+  }
+}

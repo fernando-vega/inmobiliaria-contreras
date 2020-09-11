@@ -1,0 +1,68 @@
+.title_section{
+  transform: skew(-20deg);
+  background: @color-gray;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.5);
+  .icon_content{
+    position: relative;
+    width: 60px;
+    height: 100%;
+    background: @color-purple;
+    margin-right: 12px;
+    transform: skew(0deg);
+    display: flex;
+    justify-content: center;
+    &::before{
+      width: 30px;
+      height: 30px;
+      transform: skew(20deg);
+      top: 22%;
+      position: absolute;
+    }
+    &.house-icon{
+      &::before{
+        content: url(../images/icons/icon-house.png);
+      }  
+    }
+    &.news-icon{
+      &::before{
+        content: url(../images/icons/icon-news.png);
+      }
+    }
+  }
+  h3{
+    margin: 0;
+    font-size: 2.2em;
+    color: @color-gray-dark;
+    font-weight: 300;
+    display: flex;
+    padding: @padding/2 @padding;
+    line-height: 1em;
+    transform: skew(20deg);
+    span{
+      color: @color-purple;
+      font-weight: 400;
+      margin-left: 12px;
+    }
+    .responsive(@screen-sm,{
+      font-size: 1.8em;
+    });
+    .responsive(@screen-xs,{
+      font-size: 1.4em;
+    });
+  }
+}
+.title-white{
+  color: @color-white;
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0;
+  span{
+    font-weight: 300;
+    padding: 0 12px;
+    font-size: .7em;
+  }
+  .responsive(@screen-sm,{
+    font-size: 1.5em;
+  });
+}

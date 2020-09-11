@@ -1,0 +1,60 @@
+extends _base
+
+block content
+
+  //Header not index
+  .padding-botton
+    .img_header(style="background: url(images/backgrounds/bk-header-2.png)center no-repeat; background-size: cover; height: 120px")
+  //End header
+  //Background
+  .col-xs-12.bkg-form.row.middle-xs(style="background: url(images/backgrounds/bk-header-6.png) center no-repeat; height: 320px !important")
+  .row.col-xs-12
+    .limiter__container
+      .content-card.center-xs.col-xs-12.row
+        .card.card-white.col-xs-10.col-sm-8
+          h3.txt_orange.txt_card CONOCEMOS EL SECTOR INMOBILIARIO
+          p Ofrecemos servicios especializados para su seguridad
+      .about.padding-botton
+        p Tiene presencia en Colombia: Bogotá, Municipios aledaños, Cartagena, Barranquilla, Valledupar y Villavicencio también está presente en Panamá.
+        p Fue constituida en el año 1993 y desde entonces, aplicando buenas prácticas y habilidades distintivas en su gestión, ha desarrollado proyectos de vivienda, proyectos de comercio, edificaciones para oficinas y educación. 
+        h2 Misión
+        p Por su calidad, continuo enfoque en innovación y visión de negocios, proyecta su crecimiento a otros mercados en Colombia y países cercanos. 
+        p Amarilo S.A.S Es una empresa de servicios de promoción, gerencia, venta y construcción de proyectos. Nuestros clientes son atraidos por la ubicación, novedad, calidad y precio de nuestros productos. La atención, conocimiento y seriedad de nuestros empleados les brinda la seguridad y confianza.
+  .bk-gray
+    .limiter__container.not-padding.row.col-xs-12.center-xs
+      ul.tabs-content.row.col-xs-12
+        li.col-xs-4(data-tab="tab1")
+          a(href="#tab1")#item-1.item
+            img.to-svg(src="./images/icons/house_hand.svg", alt="Comercializacion")
+            h4 Comercialización
+            p Efectiva de inmuebles
+        li.col-xs-4(data-tab="tab2")
+          a(href="#tab2")#item-2.item
+            img.to-svg(src="./images/icons/docs.svg", alt="Proteccion juridica")
+            h4 Protección jurídica 
+            p y asesoría en bienes raíces
+        li.col-xs-4(data-tab="tab3")
+          a(href="#tab3")#item-3.item
+            img.to-svg(src="./images/icons/light.svg", alt="estructuracion")
+            h4 Estructuración
+            p de proyectos inmobiliarios
+  .sections-tab
+    .limiter__container.content-section-tabs
+      article#tab1
+        h3 Comercialización Efectiva de inmuebles
+        p Tiene presencia en Colombia: Bogotá, Municipios aledaños, Cartagena, Barranquilla, Valledupar y Villavicencio también está presente en Panamá. 
+        p Fue constituida en el año 1993 y desde entonces, aplicando buenas prácticas y habilidades distintivas en su gestión, ha desarrollado proyectos de vivienda, proyectos de comercio, edificaciones para oficinas y educación. Por su calidad, continuo enfoque en innovación y visión de negocios, proyecta su crecimiento a otros mercados en Colombia y países cercanos. 
+        p Amarilo S.A.S Es una empresa de servicios de promoción, gerencia, venta y construcción de proyectos. Nuestros clientes son atraidos por la ubicación, novedad, calidad y precio de nuestros productos. La atención, conocimiento y seriedad de nuestros empleados les brinda la seguridad y confianza.
+      article#tab2
+        h3 Protección jurídica y asesoría en bienes raíces
+        p Amarilo S.A.S Es una empresa de servicios de promoción, gerencia, venta y construcción de proyectos. Nuestros clientes son atraidos por la ubicación, novedad, calidad y precio de nuestros productos. La atención, conocimiento y seriedad de nuestros empleados les brinda la seguridad y confianza.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam fuga asperiores officiis adipisci hic quasi, velit quia rerum? Repellendus repellat doloribus voluptatem atque fugiat praesentium iusto eius velit in!
+      article#tab3
+        h3 Estructuración de proyectos inmobiliarios
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat odio corrupti non! Quasi necessitatibus veritatis maxime tempora, explicabo sequi fuga dignissimos laborum dicta eos temporibus molestiae mollitia sed assumenda distinctio.
+        p Amarilo S.A.S Es una empresa de servicios de promoción, gerencia, venta y construcción de proyectos. Nuestros clientes son atraidos por la ubicación, novedad, calidad y precio de nuestros productos. La atención, conocimiento y seriedad de nuestros empleados les brinda la seguridad y confianza.
+      .col-xs-12.row.center-xs.padding-top
+        a(href="#", title="title").btn.purple Consultar aquí
+  .col-xs-12.bkg-form.row.middle-xs(style="background: url(images/backgrounds/bk-header-7.png) center no-repeat; height: 350px !important; background-attachment: fixed;")
+  include __footer
+  

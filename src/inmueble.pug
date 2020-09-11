@@ -1,0 +1,175 @@
+extends _base
+
+block content
+
+  //Header not index
+  .padding-botton
+    .img_header(style="background: url(images/backgrounds/bk-header-2.png)center no-repeat; background-size: cover; height: 120px")
+  //End header
+  .limiter__container.row.col-xs-12.content-imm
+    .row.col-xs-12.start-xs.links-imm
+      p
+        a(href="#") Comprar
+      p
+        a(href="#") Bogotá
+      p
+        a(href="#") Chicó
+      p
+        a(href="#") Ed. Balcones del chicó
+    .col-xs-12.title-imm
+      h3 Chicó -
+        span Bogotá
+    .flexslider.col-xs-12
+      ul.slides
+        li
+          img(src='./images/immovables/1000x550/imm-01.png')
+        li
+          img(src='./images/immovables/1000x550/imm-01.png')
+        li
+          img(src='./images/immovables/1000x550/imm-01.png')
+        li
+          img(src='./images/immovables/1000x550/imm-01.png')
+      a.btn.red.btn-fancy.fancybox-thumb(data-fancybox="group" ,data-type="image",href="./images/immovables/1000x550/imm-01.png") Ver Fotos
+      a.fancybox-thumb(data-fancybox="group" ,data-type="image",href="./images/immovables/1000x550/imm-01.png")
+      a.fancybox-thumb(data-fancybox="group" ,data-type="image",href="./images/immovables/1000x550/imm-01.png")
+      a.fancybox-thumb(data-fancybox="group" ,data-type="image",href="./images/immovables/1000x550/imm-01.png")
+      a.fancybox-thumb(data-fancybox="group" ,data-type="image",href="./images/immovables/1000x550/imm-01.png")
+    .charac-gray.row.col-xs-12.around-xs.middle-xs
+      p.row.middle-xs.price $600'000.000
+      p.row.middle-xs.size 105 m
+        sup 2
+      p.row.middle-xs.rooms 3
+        span Habitaciones
+      p.row.middle-xs.parking 2
+        span Parqueaderos
+    section.row.col-xs-12
+      .col-sm-8.col-xs-12
+        .description-imm
+          p Presentamos este espacioso apartamento dúplex para arriendo en uno de los sectores más tranquilos de la ciudad, que cuenta con muchas zonas verdes alrededor y del cual podrás tener una bonita vista.
+          
+          p Este hermoso y cálido apartamento te abre sus puertas con el primer nivel que viene compuesto por una cocina semi abierta con buena luz natural, en frente está la sala-comedor la cual cuenta con chimenea de leña y luego está el baño social. Las escaleras te conducirán a las dos habitaciones, donde cada una cuenta con buenos espacios.
+
+          ul
+            li Terraza
+            li Depósito
+            li Exterior
+            li Vista oriental
+          
+          h3 ZONAS COMUNES
+          table
+            tr
+              th
+                ul
+                  li Bicicleteros
+                  li Gimnasio
+                  li Juegos infantiles
+                  li Parquadero visitantes
+                  li Portería y recepción
+              th
+                ul
+                  li Salas de reunión
+                  li Salón comunal
+                  li Subestación eléctrica
+                  li Tanque de agua
+                  li Zonas verdes
+      .col-sm-4.col-xs-12
+        .section-charact
+          h3 Características
+          .row.between-xs.middle-xs.item-section-charact
+            .col-xs-8
+              p Baños
+            .col-xs-4.end-xs
+              strong 2
+          .row.between-xs.middle-xs.item-section-charact
+            .col-xs-8
+              p Parqueaderos
+            .col-xs-4.end-xs
+              strong 2
+          .row.between-xs.middle-xs.item-section-charact
+            .col-xs-8
+              p Área m
+            .col-xs-4.end-xs
+              strong 290 m
+                sup 2
+          .row.between-xs.middle-xs.item-section-charact
+            .col-xs-8
+              p Administración
+            .col-xs-4.end-xs
+              strong $778.000
+          br
+          br
+          .btn.orange.not-margin
+            p AGENDAR
+            strong CITA
+  //Map
+  #map.medio__mapa(data-map-lat="4.606406", data-map-lon="-74.078435", data-map-img="")
+  //End Map
+  .limiter__container
+    .row.col-xs-12.center-xs.padding-top
+        .title_section.row.center-xs
+          span.icon_content.house-icon
+          h3.middle-xs INMUEBLES
+            span RELACIONADOS
+    section.immovables.row.between-xs.col-xs-12.padding-top.padding-botton
+      //Item immovable
+      .item-immovable.col-xs-12.col-sm-6.col-md-4.row.center-xs
+        .img-imm(style="background: url(./images/immovables/imm01.png) center no-repeat;")
+          .hover-item
+          .img-details
+            p.red VENTA
+            span 5
+        .details
+          p $ 1'300.900
+          h4 La esperanza -
+            span.city-imm Duitama
+          .row.center-xs.middle-xs.charac
+            .item-charac
+              p 93 mts
+            .item-charac
+              p 3 hab
+            .item-charac
+              p 2 par
+          a.view-more(href="inmueble.html",) Ver más
+      //End item immovable
+      //Item immovable
+      .item-immovable.col-xs-12.col-sm-6.col-md-4.row.center-xs
+        .img-imm(style="background: url(./images/immovables/imm02.png) center no-repeat;")
+          .hover-item
+          .img-details
+            p.red VENTA
+            span 5
+        .details
+          p $ 1'300.900
+          h4 La esperanza -
+            span.city-imm Duitama
+          .row.center-xs.middle-xs.charac
+            .item-charac
+              p 93 mts
+            .item-charac
+              p 3 hab
+            .item-charac
+              p 2 par
+          a.view-more(href="inmueble.html",) Ver más
+      //End item immovable
+      //Item immovable
+      .item-immovable.col-xs-12.col-sm-6.col-md-4.row.center-xs
+        .img-imm(style="background: url(./images/immovables/imm03.png) center no-repeat;")
+          .hover-item
+          .img-details
+            p.red VENTA
+            span 5
+        .details
+          p $ 1'300.900
+          h4 La esperanza -
+            span.city-imm Duitama
+          .row.center-xs.middle-xs.charac
+            .item-charac
+              p 93 mts
+            .item-charac
+              p 3 hab
+            .item-charac
+              p 2 par
+          a.view-more(href="inmueble.html",) Ver más
+      //End item immovable
+  include __footer
+  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="HandheldFriendly" content="true")
+		meta(name="robots" content="index, follow")
+		meta(name="keywords" content="")
+		meta(name="application-name" content="Titulo Pagina")
+
+		title Inmobiliaria Contreras
+
+		link(rel="shortcut icon",href="images/logo/favicon.ico",type="image/x-icon")
+		link(rel="icon",href="images/logo/favicon.png",type="image/x-icon")
+
+		// Fancybox
+		link(href="vendor/fancybox/jquery.fancybox.min.css",rel="stylesheet")
+		//Flexslider
+		link(rel="stylesheet", href="vendor/flexslider/flexslider.css")
+
+		link(href="vendor/normalize.min.css",rel="stylesheet")
+		link(href="vendor/flexboxgrid.min.css",rel="stylesheet")
+		link(href="css/main.min.css",rel="stylesheet")
+
+		script(src="vendor/jquery.min.js")
+	body
+		include __header
+
+		section.content
+			block content
+		span#btn-icon-up
+			img(src="./images/icons/icon-arrow-up.png", alt="Icon Up")
+		div.modal__loading
+		div.message__popup
+			div.row.middle-xs
+				div.logo
+					img(src='images/logo/logo.png', alt='Inmobiliaria')
+				div.message__content
+					h3.message__title Notificación Sistema
+					p.message__text Su mensaje se ha enviado correctamente
+		// Optional FlexSlider Additions
+		script(src='vendor/flexslider/jquery.easing.js')
+		script(src='vendor/flexslider/jquery.mousewheel.js')
+		//Maps
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBZp-ujdsD2YiiVuDo1-fbf-VHJMf-Zuw", async defer)
+		script(src="vendor/gmap3.min.js")
+		script(src="js/map.js") 
+		// Fancybox
+		script(src="vendor/fancybox/jquery.fancybox.min.js")
+		// Syntax Highlighter flexslide
+		script(type="text/javascript", src='vendor/flexslider/jquery.flexslider.js')
+		script(type='text/javascript', src='vendor/flexslider/shCore.js')
+		script(type='text/javascript', src='vendor/flexslider/shBrushXml.js')
+		script(type='text/javascript', src='vendor/flexslider/shBrushJScript.js')
+		//Main
+		script(src="js/main.js") 

@@ -1,0 +1,46 @@
+//
+// Variables
+// 
+
+@import url(fonts.less);
+@import url(palette.less);
+
+
+//
+// Typography
+//
+
+@font-text-color: @color-gray-dark;
+@font-text: 'Source Sans Pro', sans-serif;;
+
+// Layouts
+@padding: 12px;
+
+
+// Components
+
+@path__images: '../images';
+
+// Media Queries Breakpoints
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1150px;
+
+@screen-xs-max: (@screen-xs - 1);
+@screen-sm-max: (@screen-sm - 1);
+@screen-md-max: (@screen-md - 1);
+
+
+
+.responsive(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}
+/**** RETINA ****/
+.retina(@rules){
+	@media only screen and (-webkit-min-device-pixel-ratio: 2){
+		@rules();
+	}
+}

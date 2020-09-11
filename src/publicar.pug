@@ -1,0 +1,82 @@
+extends _base
+
+block content
+
+  //Header not index
+  .padding-botton
+    .img_header(style="background: url(images/backgrounds/bk-header-2.png)center no-repeat; background-size: cover; height: 120px")
+  //End header
+  //Background
+  .col-xs-12.bkg-form.row.middle-xs(style="background: url(images/backgrounds/bk-header-5.png) center no-repeat;")
+    .limiter__container
+      .col-xs-12.row.start-xs
+      h3.title-white PUBLICA TU INMUEBLE
+        span Completa este formulario y te contactaremos
+  .limiter__container.col-xs-12.padding-top.padding-botton.row.between-xs
+    form.public-imm.row.col-xs-12.between-xs.top-xs.padding-botton
+      .col-xs-12.col-sm-6.row
+        h3.col-xs-12 Datos de contacto
+        .col-xs-12.row
+          p Nombre
+          input.col-xs-12(type="text")
+        .col-xs-12.row
+          p Correo electrónico
+          input.col-xs-12(type="email")
+        .col-xs-12.row
+          p Teléfono
+          input.col-xs-12(type="number")
+      .col-xs-12.col-sm-5.row.between-xs
+        h3.col-xs-12 Datos de inmuble
+        .col-xs-12.col-sm-5
+          p Tipo de transacción
+          select(name="")
+            option(value="Arriendo") Arriendo
+            option(value="Venta") Venta
+        .col-xs-12.col-sm-6
+          p Tipo de propiedad
+          select(name="")
+            option(value="Local") Local
+            option(value="Apartamento") Apartamento
+            option(value="Casa") Casa
+            option(value="Finca") Finca
+        .col-xs-12.col-sm-4
+          p Ciudad
+          select.col-xs-12(name="")
+            option(value="Duitama") Duitama
+            option(value="Duitama") Tunja
+            option(value="Duitama") Bogotá
+            option(value="Duitama") Medellin
+        .col-xs-12.col-sm-7.row
+          p.col-xs-12 Dirección
+          input.col-xs-12(type="text")
+        .col-xs-12
+          p ¿Cómo nos conociste?
+          select(name="")
+            option(value="Facebook") Facebook
+            option(value="Facebook") Instagram
+            option(value="Facebook") Twitter
+      .col-xs-12.row.center-xs.padding-top
+        button.btn.orange(type="submit") Enviar
+  .bk-gray
+    .limiter__container.row.center-xs
+      .section-gray-publish.row.center-xs.col-xs-12
+        .col-xs-12.col-sm-6.row.center-xs.start-sm.img-laptop
+          img(src="./images/backgrounds/laptop.gif", alt="laptop")
+        .col-xs-12.col-sm-6.center-xs.start-sm.list-publish
+          h3 VENTAJAS DE PUBLICAR
+          h2 TU INMUEBLE
+          br
+          ul
+            li Comercialización
+            li Asesoria
+            li Expertos en Mercadeo Digital
+            li Protección jurídica
+  br
+  .limiter__container.padding-top.padding-botton
+    .section-consult.row.center-xs.col-xs-12
+      h3.col-xs-8 Consulte los costos
+      h2.col-xs-8 de publicar su inmueble con nosotros
+      .col-xs-12.padding-top
+        a(href="#", title="").btn.orange Consultar aquí
+  include __footer
+  

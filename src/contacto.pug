@@ -1,0 +1,51 @@
+extends _base
+
+block content
+
+  //Header not index
+  .padding-botton
+    .img_header(style="background: url(images/backgrounds/bk-header-2.png)center no-repeat; background-size: cover; height: 120px")
+  //End header
+  //Background
+  .col-xs-12.bkg-form.row.middle-xs(style="background: url(images/backgrounds/bk-header-8.png) center no-repeat; height: 320px !important")
+  .row.col-xs-12
+    .limiter__container
+      .content-card.center-xs.col-xs-12.row
+        .card.card-white.col-xs-10.col-sm-8
+          h3.txt_orange.txt_card QUEREMOS DARLE EL MEJOR SERVICIO
+          p contáctenos por correo, télefono p agende su cita
+  .limiter__container.row.middle-xs.center-xs.col-xs-12
+    .social_icons.row.col-xs-8.col-sm-4.between-xs
+      a(href="#", title="Facebook").col-xs-4
+        img.social-icon.facebook.to-svg(src="./images/icons/icon-facebook.svg", alt="Facebook")
+      a(href="#", title="Twitter").col-xs-4
+        img.social-icon.twitter.to-svg(src="./images/icons/icon-twitter.svg", alt="Twitter")
+      a(href="#", title="Instagram").col-xs-4
+        img.social-icon.instagram.to-svg(src="./images/icons/icon-instagram.svg", alt="Instagram")
+    .contact-info.row.between-xs.col-xs-12
+      .col-xs-12.col-sm-3.center-xs.item-info
+        p 3182801504
+      .col-xs-12.col-sm-6.center-xs.item-info
+        p CALLE 16#14-41 / OF.905-ED. PALMA REAL
+      .col-xs-12.col-sm-3.center-xs.item-info
+        p DUITAMA - BOYACÁ
+    form.public-imm.row.col-xs-12.between-xs.top-xs.padding-botton
+      .col-xs-12.row.start-xs
+        h3 Escribenos
+      .col-xs-12.col-sm-5.row.start-xs
+        .col-xs-12.row
+          p Nombre
+          input.col-xs-12(type="text")
+        .col-xs-12.row
+          p Correo electrónico
+          input.col-xs-12(type="email")
+        .col-xs-12.row
+          p Teléfono
+          input.col-xs-12(type="number")
+      .col-xs-12.col-sm-6.row
+        p Comentarios
+        textarea(name="Comentarios", cols="30", rows="9").col-xs-12
+      .col-xs-12.row.center-xs.padding-top
+        button.btn.orange(type="submit") Enviar
+  include __footer
+  
